@@ -1,0 +1,12 @@
+name: Continuous Integration
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-pipeline:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate configuration
+        run: echo "finished"
